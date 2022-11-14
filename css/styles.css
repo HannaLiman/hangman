@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #2E3532;
+  color: #fff;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+header h1 {
+  margin: 0;
+  padding: 20px;
+  font-size: 5em;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-align: center;
+  font-family:fantasy;
+
+}
+
+main {
+  flex: 1;
+  padding: 1.5em;
+  align-content: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: #7E9181;
+}
+
+main > article > p {
+  font-size: large;
+  text-align: justify;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+main:after {
+  content: "\00a0"; /* &nbsp; */
+  display: block;
+  margin-top: var(--space);
+  height: 0px;
+  visibility: hidden;
+}
+
+main > article {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+main > article > button {
+  align-content: center;
+  justify-content: center;
+}
+
+main > article > h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+#imageSection {
+  text-align: right;
+  padding-right: 50px;
+  
+}
+
+#startGameBtn {
+  font-size: 1.5em;
+}
+
+#gameBoard {
+  padding: 10px 0;
+}
+
+#letterButtons {
+  display: inline-flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#letterButtons button:not(last-child) {
+  margin: 4px 4px;
+  cursor: pointer;
+  max-width: 84px;
+  min-width: 84px;
+}
+
+#letterBoxes li {
+  display: inline-flex;
+  padding: 0.2em;
+}
+
+#letterBoxes input {
+  border: 1px solid #666;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 2em;
+  margin-top: 1em;
+  padding: 20px 5px;
+  text-align: center;
+  width: 2em;
+}
+
+#message {
+  padding-top: 20px;
+  font-size: 1.5em;
+}
+
+
+img {
+  width: 200px;
+}
+
+.btn {
+  -moz-user-select: text;
+  background-color: #fff;
+  background: transparent;
+  border-radius: 6px;
+  border: 0;
+  border: 2px solid #666;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font: inherit;
+  line-height: normal;
+  margin-bottom: 16px;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  padding: 16px 36px 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.btn--stripe:disabled {
+  background-color: #94849B;
+  color: #fff;
+  border-color: #666;
+}
+
+.btn--stripe:hover {
+  background-color: #94849B;
+  color: #fff;
+  border-color: #000;
+}
+
+
+
+
+
+
+/* mobile styling*/
+
+/* @media (max-width: 400px){
+
+  main{
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  main > article > h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+  }
+
+  main > article > p {
+    text-align: justify;
+    font-size: small;
+  }
+
+} */

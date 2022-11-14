@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" >
+  </head>
+
+  <body>
+    <header>
+      <h1>Hangman</h1>
+    </header>
+    <main>
+      <article id="welcomeSection">
+        <h2>Välkommen till spelet Hänga gubbe.</h2>
+        <p>
+          När du trycker på <em>starta spelet</em>, kommer datorn att välja ett slumpmässigt ord inom kategorin hundraser.
+          Sedan dyker det upp ett visst antal fält som motsvarar antalet
+          bokstäver i ordet.Ditt mål är att gissa ordet genom att trycka på bokstavsknapparna.
+          För varje bokstav du gissar rätt, så fylls en bokstav
+          på rätt plats i ordets bokstavslådor.
+        </p>
+      </article>
+      <section id="imageSection">      
+        <img id="hangman" src="images/h0.png" alt="hangman">
+      </section>
+      <button
+        class="btn btn--stripe"
+        type="button"
+        id="startGameBtn"
+      >
+        Start Game
+      </button>
+      <section id="gameBoard">
+        <ul id="letterButtons">
+          <li>
+            <button class="btn btn--stripe" type="button" value="A">A</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="B">B</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="C">C</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="D">D</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="E">E</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="F">F</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="G">G</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="H">H</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="I">I</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="J">J</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="K">K</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="L">L</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="M">M</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="N">N</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="O">O</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="P">P</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="Q">Q</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="R">R</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="S">S</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="T">T</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="U">U</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="V">V</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="W">W</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="X">X</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="Y">Y</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="Z">Z</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="Å">Å</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="Ä">Ä</button>
+          </li>
+          <li>
+            <button class="btn btn--stripe" type="button" value="Ö">Ö</button>
+          </li>
+        </ul>
+        <section id="letterBoxes">
+          <!-- This is where the matched letters should appear, these should match the number of letters in the selected word -->
+        </section>
+        <section id="message">
+          <!-- This is where messages should appear -->
+          <br>
+        </section>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
