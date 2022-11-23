@@ -15,8 +15,9 @@ var letterButtonEls = document.querySelectorAll('#letterButtons button'); // Arr
 var letterBoxEls = document.querySelector("#letterBoxes");    // Array av DOM-noder: Rutorna där bokstäverna ska stå
 var gameBoard = document.querySelector("#gameBoard");
 
-//Eventlisteners
+letterButtonEls.disabled = true;
 
+//Eventlisteners
 startGameBtnEl.addEventListener('click', startGame);
 
 
